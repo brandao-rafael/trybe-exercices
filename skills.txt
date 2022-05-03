@@ -4,3 +4,6 @@ Git
 HTML
 CSS
 Softskills
+Javascript
+Python
+React
