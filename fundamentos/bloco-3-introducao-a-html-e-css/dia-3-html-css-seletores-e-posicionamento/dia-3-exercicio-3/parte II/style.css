@@ -1,0 +1,48 @@
+div:hover {
+    border: 5px solid black;
+}
+
+.primaria {
+    background-color: red;
+    color: white;
+}
+
+.primaria h3 {
+    font-style: italic;
+}
+
+.secundaria {
+    background-image: linear-gradient(to right,rgb(131, 128, 128), rgb(141, 34, 34));
+    color:rgb(253, 54, 54);
+}
+
+.secundaria h3 {
+    color:rgb(253, 54, 54);
+}
+
+.complementar {
+    background-color: darkorange;
+    color: brown;
+    height: 150px;
+}
+
+.complementar h3 {
+    font-style: italic;
+}
+
+.escura {
+    background-color: black;
+}
+
+.escura h3 {
+    color: darkgrey;
+}
+
+.clara {
+    background-color: aquamarine;
+    color: blue;
+}
+
+.clara h3 {
+    font-style: italic;
+}

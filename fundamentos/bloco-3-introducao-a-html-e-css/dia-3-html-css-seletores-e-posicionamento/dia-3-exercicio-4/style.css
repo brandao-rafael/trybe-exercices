@@ -1,0 +1,60 @@
+ol li {
+    background-color: yellow;
+    font-size: 20px;
+}
+
+ul li {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ol li em, ul li em{
+    font-weight: bold;
+}
+
+.impar {
+    color: green;
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    color: red;
+}
+
+h1 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.blue {
+    color: blue;
+}
+
+.pink {
+    color: rgb(255, 131, 152);
+}
+
+ul.aliados li a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.orange:hover {
+    color: orange;
+}
+
+.green:hover {
+    color: green;
+}
+
+.black:hover {
+    color: black;
+}
+
+.yellow:hover {
+    color: yellow;
+}
