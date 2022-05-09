@@ -1,0 +1,20 @@
+h1, p {
+    text-align: center;
+}
+
+.order-list li, ul li {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    text-align: center;
+}
+
+.order-list:hover {
+    background-color: red;
+    color: white;
+    transition: 200ms;
+}
+
+.order-list:active {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
