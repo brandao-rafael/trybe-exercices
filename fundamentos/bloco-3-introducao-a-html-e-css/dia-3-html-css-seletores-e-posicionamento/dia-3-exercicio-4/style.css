@@ -1,31 +1,25 @@
 ol li {
     background-color: yellow;
+}
+
+ol li, ul li {
     font-size: 20px;
 }
 
-ul li {
-    font-size: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-ol li em, ul li em{
+ol li em, ul li em {
     font-weight: bold;
 }
 
-.impar {
+ol li:nth-of-type(2n+0) {
     color: green;
+}
+ol li:nth-of-type(2n+1) {
     text-transform: uppercase;
 }
-
 h1, h3 {
     color: red;
 }
-
-h1 em {
+h1 em, h3 em {
     font-size: 40px;
     border: 1px solid black;
 }
@@ -35,12 +29,16 @@ h1 em {
 }
 
 .pink {
-    color: rgb(255, 131, 152);
+    background-color: rgb(255, 121, 204);
 }
 
-ul.aliados li a:hover {
-    font-weight: bold;
+ul li a {
     text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+
+ul li a:hover {
+    font-weight: bold;
 }
 
 .orange:hover {
@@ -58,3 +56,4 @@ ul.aliados li a:hover {
 .yellow:hover {
     color: yellow;
 }
+
