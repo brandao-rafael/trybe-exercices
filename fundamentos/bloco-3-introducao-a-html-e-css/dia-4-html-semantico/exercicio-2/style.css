@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.nav-bar{
+    width: 100%;
+    text-align: end;
+    padding: 10px;
+    background-color: rgb(43, 42, 42);
+}
+
+.nav-bar ul li{
+    display: inline-block;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+}
