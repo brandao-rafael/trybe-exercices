@@ -48,6 +48,19 @@
     width: 80%;
 }
 
-.main-container h2, .main-container h3, .main-container p, .main-container img {
+.main-container h2, .main-container h3, .main-container img {
     margin: 25px;
+}
+
+.description {
+    border: 1px solid blueviolet;
+    margin-top: 50px;
+}
+
+.individual-article {
+    display: inline-block;
+}
+
+.individual-article img{
+    float: left;
 }
