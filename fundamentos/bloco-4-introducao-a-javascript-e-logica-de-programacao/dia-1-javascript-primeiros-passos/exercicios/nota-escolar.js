@@ -1,6 +1,10 @@
-let nota = 90;
+let nota = 40;
 
-if(nota >= 90){
+
+
+if (nota > 100 || nota < 0){
+    console.log('ERRO, valor invalido')
+} else if(nota >= 90 && nota <= 100){
     console.log('A');
 } else if (nota >= 80){
     console.log('B');
