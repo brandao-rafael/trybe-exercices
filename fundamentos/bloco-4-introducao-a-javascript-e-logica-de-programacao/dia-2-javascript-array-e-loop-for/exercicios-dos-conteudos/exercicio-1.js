@@ -1,4 +1,4 @@
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+let menu = ['Home', 'Serviços', 'Portifólio', 'Links'];
 let menuServices = menu.indexOf('Serviços');
 let indexOfPortfolio = menu.indexOf('Portifólio');
 
