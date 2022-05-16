@@ -7,5 +7,6 @@ for (let i = 0; i < number; i += 1){
     for (let j = 0; j < i + 1; j += 1){
         triangulo += '*';
     }
+    
     console.log(triangulo);
 }
