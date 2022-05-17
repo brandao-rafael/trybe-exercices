@@ -15,17 +15,22 @@ info['recorrente'] = 'Sim'
 infoPatinhas['recorrente'] = 'Sim'
 // console.log(info, infoPatinhas);
 
-for (let key in info){
-    // console.log(key);
-}
-for (let key in info){
-    // console.log(info[key]);
-}
-for (let key in info){
-   if (info.recorrente === infoPatinhas.recorrente){
-       info.recorrente = 'Ambos recorrentes';   
-   }
+// for (let key in info){
+//     // console.log(key);
+// }
+// for (let key in info){
+//     // console.log(info[key]);
+// }
+i = 0
+for (let key in info) {
+    if (i === 3) {
+        break;
+    }
+
+    if (info.recorrente === infoPatinhas.recorrente) {
+        info.recorrente = 'Ambos recorrentes';
+    }
     console.log(info[key] + " e " + infoPatinhas[key]);
+    i += 1;
 }
 console.log(info.recorrente)
-    
