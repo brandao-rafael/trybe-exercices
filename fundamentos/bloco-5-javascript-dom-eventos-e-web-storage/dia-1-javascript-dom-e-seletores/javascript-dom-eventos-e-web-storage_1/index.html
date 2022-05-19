@@ -44,7 +44,7 @@
     <script>
         function changeP(){
             const paragraphText = document.getElementsByTagName('p')[1];
-            paragraphText.innerText = "Em dois anos, quero estar trabalhando"
+            paragraphText.innerText = "Em dois anos, quero estar trabalhando";
         }
         changeP();
         function changeContentColor(){
@@ -61,7 +61,14 @@
             const correct = document.getElementsByTagName('h1')[0];
             correct.innerText = 'Exercicio 5.1 - JavaScript';
         }
-        correctH1()
+        correctH1();
+        function upper(){
+            for (let i = 0; i < 3; i++) {
+                let text = document.getElementsByTagName('p');
+                text[i].style.textTransform = "uppercase"
+            }
+        }
+        console.log(upper());
     </script>
   </body>
 </html>
