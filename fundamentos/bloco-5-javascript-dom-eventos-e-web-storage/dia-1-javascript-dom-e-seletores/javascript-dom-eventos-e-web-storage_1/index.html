@@ -69,6 +69,13 @@
             }
         }
         upper();
+        function paragraphPrint(){
+            let paragraph = document.getElementsByTagName('p');
+            for (let i = 0; i < paragraph.length; i++) {
+                console.log(paragraph[i].innerHTML);  
+            }
+        }
+        paragraphPrint();
     </script>
   </body>
 </html>
