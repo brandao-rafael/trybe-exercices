@@ -90,8 +90,31 @@
             imgLeftSection.src = 'https://picsum.photos/200';
             imgLeftSection.className = 'small-image';
             leftSection.appendChild(imgLeftSection);
+
+            let temp = {
+                'rightSection': rightSection,
+            }
+            return temp;
         }
-        createElements()
+        let key = createElements()
+
+        let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        let newList = document.createElement('ul');
+        key['rightSection'].appendChild(newList);
+
+        function createList (num){
+            let listItem = document.createElement('li');
+            listItem.innerText = num;
+            return listItem;
+        }
+        function addElementChild(location, element){
+            location.appendChild(element);
+        }
+        for (const number of numbers) {
+            let elemento = createList(number);
+            addElementChild(newList, elemento);
+        }
+
     </script>
 </body>
 
