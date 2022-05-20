@@ -91,6 +91,18 @@
             imgLeftSection.className = 'small-image';
             leftSection.appendChild(imgLeftSection);
 
+            let firstH3 = document.createElement('h3');
+            firstH3.innerText = "esse é o primeiro h3";
+            firstMain.appendChild(firstH3);
+
+            let secondH3 = document.createElement('h3');
+            secondH3.innerText = "esse é o segundo h3";
+            firstMain.appendChild(secondH3);
+
+            let thirdH3 = document.createElement('h3');
+            thirdH3.innerText = "esse é o terceiro h3";
+            firstMain.appendChild(thirdH3);
+
             let temp = {
                 'rightSection': rightSection,
             }
@@ -115,6 +127,7 @@
             addElementChild(newList, elemento);
         }
         
+
 
     </script>
 </body>
