@@ -65,6 +65,14 @@
             let firstH1 = document.createElement('h1');
             firstH1.innerText = 'Exercicio 5.2 - JavaScript DOM';
             bodyVar.appendChild(firstH1);
+
+            let firstMain = document.createElement('main');
+            firstMain.className = 'main-content';
+            bodyVar.appendChild(firstMain);
+
+            let sectionSonMain = document.createElement('section');
+            sectionSonMain.className = 'center-content';
+            firstMain.appendChild(sectionSonMain);
         }
         createElements()
     </script>
