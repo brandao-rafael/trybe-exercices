@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        function changeP(){
+            const paragraphText = document.getElementsByTagName('p')[1];
+            paragraphText.innerText = "Em dois anos, quero estar trabalhando";
+        }
+        changeP();
+        function changeContentColor(){
+            const content = document.getElementsByClassName('main-content')[0];
+            content.style.backgroundColor = 'rgb(76,164,109)';
+        }
+        changeContentColor();
+        function changeCenterColor(){
+            const centerContent = document.getElementsByClassName('center-content')[0];
+            centerContent.style.backgroundColor = "white";
+        }
+        changeCenterColor();
+        function correctH1(){
+            const correct = document.getElementsByTagName('h1')[0];
+            correct.innerText = 'Exercicio 5.1 - JavaScript';
+        }
+        correctH1();
+        function upper(){
+            for (let i = 0; i < 3; i++) {
+                let text = document.getElementsByTagName('p');
+                text[i].style.textTransform = "uppercase"
+            }
+        }
+        upper();
+        function paragraphPrint(){
+            let paragraph = document.getElementsByTagName('p');
+            for (let i = 0; i < paragraph.length; i++) {
+                console.log(paragraph[i].innerHTML);  
+            }
+        }
+        paragraphPrint();
+    </script>
+  </body>
+</html>
