@@ -72,6 +72,7 @@
 
             let sectionSonMain = document.createElement('section');
             sectionSonMain.className = 'center-content';
+            sectionSonMain.style.backgroundColor = 'green';
             firstMain.appendChild(sectionSonMain);
 
             let firstSectionP = document.createElement('p');
@@ -112,6 +113,7 @@
                 'thirdH3': thirdH3,
                 'firstMain': firstMain,
                 'leftSection': leftSection,
+                'rightSection': rightSection
             }
             return temp;
             
@@ -142,9 +144,11 @@
             param['thirdH3'].className = 'description';
         }
         adcClass(key);
-        
+        console.log(key['rightSection'])
         function rmChild (object){
             object['firstMain'].removeChild(object['leftSection']);
+            newList.removeChild(object['rightSection'].lastElementChild.lastElementChild);
+            newList.removeChild(object['rightSection'].lastElementChild.lastElementChild);
         }
         rmChild(key);
     </script>
