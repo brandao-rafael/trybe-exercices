@@ -105,10 +105,17 @@
 
             let temp = {
                 'rightSection': rightSection,
+                'firstH1': firstH1,
+                'firstH3': firstH3,
+                'secondH3': secondH3,
+                'thirdH3': thirdH3,
+                'firstMain': firstMain,
+                'leftSection': leftSection,
             }
             return temp;
+            
         }
-        let key = createElements()
+        let key = createElements();
 
         let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
         let newList = document.createElement('ul');
@@ -127,7 +134,14 @@
             addElementChild(newList, elemento);
         }
         
-
+        function adcClass (param) {
+            param['firstH1'].className = 'title';
+            param['firstH3'].className = 'description';
+            param['secondH3'].className = 'description';
+            param['thirdH3'].className = 'description';
+        }
+        adcClass(key);
+        
 
     </script>
 </body>
