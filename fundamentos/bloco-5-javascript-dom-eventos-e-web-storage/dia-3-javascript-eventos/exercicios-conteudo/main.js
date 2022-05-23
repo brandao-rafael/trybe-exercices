@@ -36,17 +36,26 @@ function changeText(param){
     const techClass = document.querySelector('.tech');
     techClass.innerText = param.target.value;
 }
-input.addEventListener('input', changeText)
+input.addEventListener('keyup', changeText)
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 function redirect (){
-    myWebpage.addEventListener('dblclick', window.location.href = "https://brandao-rafael.github.io")
+    window.location.replace('https://brandao-rafael.github.io')
 }
+myWebpage.addEventListener('dblclick', redirect)
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+function changeColor(param) {
+    param.target.style.color = "red";
+}
+myWebpage.addEventListener('mouseover', changeColor);
 
+function changeOutColor(param) {
+    param.target.style.color = "unset";
+}
+myWebpage.addEventListener('mouseout', changeOutColor);
 // Segue abaixo um exemplo do uso de event.target:
 
 
