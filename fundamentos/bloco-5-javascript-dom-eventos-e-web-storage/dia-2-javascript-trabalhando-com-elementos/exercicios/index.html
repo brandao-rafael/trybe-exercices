@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function createElements() {
+            let bodyVar = document.querySelector('body');
+            
+            let firstH1 = document.createElement('h1');
+            firstH1.innerText = 'Exercicio 5.2 - JavaScript DOM';
+            bodyVar.appendChild(firstH1);
+
+            let firstMain = document.createElement('main');
+            firstMain.className = 'main-content';
+            bodyVar.appendChild(firstMain);
+
+            let sectionSonMain = document.createElement('section');
+            sectionSonMain.className = 'center-content';
+            sectionSonMain.style.backgroundColor = 'green';
+            firstMain.appendChild(sectionSonMain);
+
+            let firstSectionP = document.createElement('p');
+            firstSectionP.innerText = "Esse é um paragrafo filho da section";
+            sectionSonMain.appendChild(firstSectionP);
+
+            let leftSection = document.createElement('section');
+            leftSection.className = 'left-content';
+            firstMain.appendChild(leftSection);
+
+            let rightSection = document.createElement('section');
+            rightSection.className = 'right-content';
+            rightSection.style.marginRight = 'auto';
+            firstMain.appendChild(rightSection);
+
+            let imgLeftSection = document.createElement('img');
+            imgLeftSection.src = 'https://picsum.photos/200';
+            imgLeftSection.className = 'small-image';
+            leftSection.appendChild(imgLeftSection);
+
+            let firstH3 = document.createElement('h3');
+            firstH3.innerText = "esse é o primeiro h3";
+            firstMain.appendChild(firstH3);
+
+            let secondH3 = document.createElement('h3');
+            secondH3.innerText = "esse é o segundo h3";
+            firstMain.appendChild(secondH3);
+
+            let thirdH3 = document.createElement('h3');
+            thirdH3.innerText = "esse é o terceiro h3";
+            firstMain.appendChild(thirdH3);
+
+            let temp = {
+                'rightSection': rightSection,
+                'firstH1': firstH1,
+                'firstH3': firstH3,
+                'secondH3': secondH3,
+                'thirdH3': thirdH3,
+                'firstMain': firstMain,
+                'leftSection': leftSection,
+                'rightSection': rightSection
+            }
+            return temp;
+            
+        }
+        let key = createElements();
+
+        let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        let newList = document.createElement('ul');
+        key['rightSection'].appendChild(newList);
+
+        function createList (num){
+            let listItem = document.createElement('li');
+            listItem.innerText = num;
+            return listItem;
+        }
+        function addElementChild(location, element){
+            location.appendChild(element);
+        }
+        for (const number of numbers) {
+            let elemento = createList(number);
+            addElementChild(newList, elemento);
+        }
+        
+        function adcClass (param) {
+            param['firstH1'].className = 'title';
+            param['firstH3'].className = 'description';
+            param['secondH3'].className = 'description';
+            param['thirdH3'].className = 'description';
+        }
+        adcClass(key);
+        console.log(key['rightSection'])
+        function rmChild (object){
+            object['firstMain'].removeChild(object['leftSection']);
+            newList.removeChild(object['rightSection'].lastElementChild.lastElementChild);
+            newList.removeChild(object['rightSection'].lastElementChild.lastElementChild);
+        }
+        rmChild(key);
+    </script>
+</body>
+
+</html>
