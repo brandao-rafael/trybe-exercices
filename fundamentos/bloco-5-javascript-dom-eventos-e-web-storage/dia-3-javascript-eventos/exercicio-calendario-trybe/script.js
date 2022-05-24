@@ -31,3 +31,11 @@ function createDays(){
     }
 }
 createDays();
+function adcButton (param){
+    const buttonContainer = document.querySelector('.buttons-container');
+    holidayButton = document.createElement('button');
+    holidayButton.innerText = param;
+    holidayButton.setAttribute('id', 'btn-holiday');
+    buttonContainer.appendChild(holidayButton)
+}
+adcButton('Feriados');
