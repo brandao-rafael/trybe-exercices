@@ -1,47 +1,35 @@
-function createElements(){
-    const sectionStyle = document.getElementById('sectionStyle');
-    const backgroundButton = document.createElement('button');
-    const backgroundInput = document.createElement('input');
-    const colorTextButton = document.createElement('button');
-    const colorTextInput = document.createElement('input');
-    const fontSizeButton = document.createElement('button');
-    const fontSizeInput = document.createElement('input');
-    const lineHeigthButton = document.createElement('button');
-    const lineHeigthInput = document.createElement('input');
-    const fontFamilyButton = document.createElement('button');
-    const fontFamilyInput = document.createElement('input');
-    
-    backgroundButton.setAttribute('id', 'backgroundBtn');
-    colorTextButton.setAttribute('id', 'colorTextBtn');
-    fontSizeButton.setAttribute('id', 'fontSizeBtn');
-    lineHeigthButton.setAttribute('id', 'lineHeigthBtn');
-    fontFamilyButton.setAttribute('id', 'fontFamilyBtn');
-    backgroundInput.setAttribute('id', 'backgroundImput');
-    colorTextInput.setAttribute('id', 'colorTextImput');
-    fontSizeInput.setAttribute('id', 'fontSizeImput');
-    lineHeigthInput.setAttribute('id', 'lineHeigthImput');
-    fontFamilyInput.setAttribute('id', 'fontFamilyImput');
+window.onload = function(){
+    const inputBackground = document.getElementById('inputBackground');
+    const btnBackground = document.getElementById('btnBackground');
+    const inputColor = document.getElementById('inputColor');
+    const btnColor = document.getElementById('btnColor');
+    const inputFontSize = document.getElementById('inputFontSize');
+    const btnFontSize = document.getElementById('btnFontSize');
+    const inputLineHeigth = document.getElementById('inputLineHeigth');
+    const btnLineHeigth = document.getElementById('btnLineHeigth');
+    const inputFontFamily = document.getElementById('inputFontFamily');
+    const btnFontFamily = document.getElementById('btnFontFamily');
 
-    backgroundButton.innerText = 'Background Color';
-    colorTextButton.innerText = 'Text Color';
-    fontSizeButton.innerText = 'Font Size';
-    lineHeigthButton.innerText = 'Line Heigth';
-    fontFamilyButton.innerText = 'Font Family'
-    backgroundButton.setAttribute('class', 'btn');
-    colorTextButton.setAttribute('class', 'btn');
-    fontSizeButton.setAttribute('class', 'btn');
-    lineHeigthButton.setAttribute('class', 'btn');
-    fontFamilyButton.setAttribute('class', 'btn');
+    const body = document.querySelector('body');
+
+    btnBackground.addEventListener('click', function(){
+        body.style.backgroundColor = inputBackground.value;
+    });
+    btnColor.addEventListener('click', function (){
+        body.style.color = inputColor.value;
+    });
+    btnFontSize.addEventListener('click', function(){
+        body.style.fontSize = inputFontSize.value + 'px';
+    });
+    btnLineHeigth.addEventListener('click', function(){
+        body.style.lineHeight = inputLineHeigth.value + 'px';
+    });
+    btnFontFamily.addEventListener('click', function(){
+        body.style.fontFamily = inputFontFamily.value;
+    });
+
+
     
-    sectionStyle.appendChild(backgroundInput);
-    sectionStyle.appendChild(backgroundButton);
-    sectionStyle.appendChild(colorTextInput);
-    sectionStyle.appendChild(colorTextButton);
-    sectionStyle.appendChild(fontSizeInput);
-    sectionStyle.appendChild(fontSizeButton);
-    sectionStyle.appendChild(lineHeigthInput);
-    sectionStyle.appendChild(lineHeigthButton);
-    sectionStyle.appendChild(fontFamilyInput);
-    sectionStyle.appendChild(fontFamilyButton);
+
+
 }
-createElements();
