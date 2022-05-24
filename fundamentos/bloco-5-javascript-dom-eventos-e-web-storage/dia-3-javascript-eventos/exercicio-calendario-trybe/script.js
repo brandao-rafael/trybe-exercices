@@ -89,3 +89,20 @@ function buttonFridayEvent (){
     });
 }
 buttonFridayEvent();
+
+function daysMouseIn (){
+    let days = document.querySelector('#days');
+    days.addEventListener('mouseover', function (param){
+        param.target.style.fontSize = '50px';
+        param.target.style.transition = '200ms';
+    })
+}
+daysMouseIn();
+function daysMouseOut (){
+    let days = document.querySelector('#days');
+    days.addEventListener('mouseout', function (param){
+        param.target.style.fontSize = '20px';
+        param.target.style.transition = '200ms';
+    })
+}
+daysMouseOut();
