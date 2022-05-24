@@ -106,3 +106,11 @@ function daysMouseOut (){
     })
 }
 daysMouseOut();
+
+function createTask (param){
+    const taskscontainer = document.querySelector('.my-tasks');
+    const task = document.createElement('span');
+    task.innerText = param;
+    taskscontainer.appendChild(task);
+}
+createTask('Beber água');
