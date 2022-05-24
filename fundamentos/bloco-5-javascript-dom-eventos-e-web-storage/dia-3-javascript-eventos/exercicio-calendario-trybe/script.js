@@ -121,7 +121,22 @@ function taskColor (color){
     colorTask.style.backgroundColor = color;
     colorTask.style.border = 'none';
     colorTask.style.transition = '200ms';
-    colorTask.setAttribute('class', 'my-tasks');
+    colorTask.setAttribute('class', 'task');
     taskscontainer.appendChild(colorTask);
 }
 taskColor('green');
+
+function selectedTasks (){
+    const task = document.querySelector('.task');
+    let counter = 0;
+    task.addEventListener('click', function(){
+        if (counter === 0){
+            task.className = 'task selected';
+            counter += 1;
+        } else {
+            task.classList.remove('selected');
+            counter = 0;
+        }
+    })
+}
+selectedTasks();
