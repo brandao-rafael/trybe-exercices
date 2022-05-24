@@ -114,3 +114,14 @@ function createTask (param){
     taskscontainer.appendChild(task);
 }
 createTask('Beber água');
+
+function taskColor (color){
+    const taskscontainer = document.querySelector('.my-tasks');
+    const colorTask = document.createElement('div');
+    colorTask.style.backgroundColor = color;
+    colorTask.style.border = 'none';
+    colorTask.style.transition = '200ms';
+    colorTask.setAttribute('class', 'my-tasks');
+    taskscontainer.appendChild(colorTask);
+}
+taskColor('green');
