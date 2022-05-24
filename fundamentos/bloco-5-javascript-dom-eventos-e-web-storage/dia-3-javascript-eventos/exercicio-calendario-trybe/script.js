@@ -31,6 +31,7 @@ function createDays(){
     }
 }
 createDays();
+
 function adcButton (param){
     const buttonContainer = document.querySelector('.buttons-container');
     holidayButton = document.createElement('button');
@@ -39,3 +40,22 @@ function adcButton (param){
     buttonContainer.appendChild(holidayButton)
 }
 adcButton('Feriados');
+
+function buttonEvent (){
+    const holidayBtn = document.querySelector('#btn-holiday');
+    const holidays = document.querySelectorAll('.holiday');
+    let originColor = 'rgb(119, 119, 119)';
+    let red = "red";
+    
+    holidayBtn.addEventListener('click', function () {
+        for (let i = 0; i < holidays.length; i += 1) {
+            if (holidays[i].style.color === red){
+                holidays[i].style.color = originColor;
+            } else {
+                holidays[i].style.color = red;
+            }
+            
+        }
+    });
+}
+buttonEvent();
