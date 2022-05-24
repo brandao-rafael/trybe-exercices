@@ -68,3 +68,24 @@ function adcFridayButton (param){
     buttonContainer.appendChild(fridayButton)
 }
 adcFridayButton('Sexta-feira');
+
+function buttonFridayEvent (){
+    const fridayBtn = document.querySelector('#btn-friday');
+    const fridays = document.querySelectorAll('.friday');
+    let originText = [4, 11, 18, 25];
+    let newText = "Sextou";
+    
+   fridayBtn.addEventListener('click', function () {
+        for (let i = 0; i < fridays.length; i += 1) {
+            if (fridays[i].innerHTML !== newText){
+                fridays[i].innerHTML = newText;
+                fridays[i].style.color = "blue";
+            } else {
+                fridays[i].innerHTML = originText[i];
+                fridays[i].style.color = 'rgb(119, 119, 119)';
+            }
+            
+        }
+    });
+}
+buttonFridayEvent();
