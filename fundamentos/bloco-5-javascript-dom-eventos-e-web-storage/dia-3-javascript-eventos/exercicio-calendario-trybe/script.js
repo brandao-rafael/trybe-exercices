@@ -59,3 +59,12 @@ function buttonEvent (){
     });
 }
 buttonEvent();
+
+function adcFridayButton (param){
+    const buttonContainer = document.querySelector('.buttons-container');
+    fridayButton = document.createElement('button');
+    fridayButton.innerText = param;
+    fridayButton.setAttribute('id', 'btn-friday');
+    buttonContainer.appendChild(fridayButton)
+}
+adcFridayButton('Sexta-feira');
