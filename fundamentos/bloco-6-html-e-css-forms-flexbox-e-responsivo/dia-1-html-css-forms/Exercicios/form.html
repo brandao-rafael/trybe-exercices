@@ -17,23 +17,25 @@
         <label for="yourEmail">Email:</label>
         <input type="email" placeholder="E-mail" required name="email" id="yourEmail" minlength="10" maxlength="50">
         <br>
-        <p>Destino Favorito:</p>
-        <label for="cityDestination">
-            <input type="radio" name="destiny" id="cityDestination">Cidade
-        </label>
-        <label for="fieldDestination">
-            <input type="radio" name="destiny" id="fieldDestination">Campo
-        </label>
-        <label for="beachDestination">
-            <input type="radio" name="destiny" id="beachDestination">Praia
-        </label>
-        <label for="mountainDestination">
-            <input type="radio" name="destiny" id="mountainDestination">Montanha
-        </label>
+        <fieldset>
+            <legend>Destino Favorito:</legend>
+            <label for="cityDestination">
+                <input type="radio" name="destiny" id="cityDestination" value="cidade">Cidade
+            </label>
+            <label for="fieldDestination">
+                <input type="radio" name="destiny" id="fieldDestination" value="campo">Campo
+            </label>
+            <label for="beachDestination">
+                <input type="radio" name="destiny" id="beachDestination" value="praia" checked>Praia
+            </label>
+            <label for="mountainDestination">
+                <input type="radio" name="destiny" id="mountainDestination" value="montanha">Montanha
+            </label>
+        </fieldset>
         <br>
         <label for="whyYouDeserve">
             <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-            <textarea name="why" id="whyYouDeserve" cols="50" rows="10" required placeholder="Responda aqui"></textarea>
+            <textarea name="why" id="whyYouDeserve" cols="50" rows="10" maxlength="500" required placeholder="Responda aqui"></textarea>
         </label>
         <br>
         <label for="bestDate">
@@ -49,7 +51,9 @@
             <input type="checkbox" name="checkIAgree" id="iAgree">Concordo que imagens das minhas férias poderão ser
             usadas na divulgação de concursos futuros.
         </label>
-        <button type="submit">Enviar!</button>
+        <br>
+        <button type="submit" id="submitButton">Enviar!</button>
+        <button type="reset">Limpar</button>
     </form>
     <script src="script.js"></script>
 </body>
