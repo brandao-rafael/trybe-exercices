@@ -9,10 +9,12 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <title>Trybe Trips</title>
 </head>
 
@@ -69,8 +71,9 @@
             </label>
         </div>
         <br>
-        <label for="bestDate" class="form-label">
-            <input type="date" name="date" id="bestDate" class="form-control mb-3">
+        <label for="bestDate" class="form-label">Data disponível
+            <br>
+            <input type="text" id="datepicker" class="mb-4 mt-3">
         </label>
         <br>
         <label for="opportunity" class="form-check-label">
@@ -88,6 +91,9 @@
         <button type="submit" id="submitButton" class="btn btn-outline-primary mt-3">Enviar!</button>
         <button type="reset" class="btn btn-outline-danger mt-3 ms-2">Limpar</button>
     </form>
+    <script>
+        var picker = new Pikaday({ field: document.getElementById('datepicker') });
+    </script>
 </body>
 
 </html>
