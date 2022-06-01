@@ -1,0 +1,40 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+input {
+    border: white solid 1px;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+fieldset {
+    width: 80%;
+    margin: 25px auto;
+    padding: 15px;
+    border: white solid 1px;
+}
+
+form {
+    padding: 25px;
+    background-color: rgb(142, 165, 185);
+}
+
+textarea {
+    border: white solid 1px;
+    margin-top: 15px;
+    border-radius: 3px;
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px;
+    margin-left: 5px;
+}
