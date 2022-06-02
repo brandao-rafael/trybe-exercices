@@ -13,6 +13,12 @@ header {
   color: white;
 }
 
+.description {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
 .header-img {
   width: 70px;
 }
