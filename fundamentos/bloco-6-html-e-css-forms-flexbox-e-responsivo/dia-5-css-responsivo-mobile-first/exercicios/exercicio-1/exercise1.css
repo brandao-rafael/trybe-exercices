@@ -46,6 +46,7 @@ figcaption {
     body {
         background-color: chartreuse;
         font-size: 1.5rem;
+        text-align: center;
     }
 
     figcaption {
@@ -62,5 +63,24 @@ figcaption {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        max-width: 100%;
+    }
+
+    body {
+        background-color: darkorange;
+        text-align: center;
+    }
+
+    h1, h2 {
+        font-size: 3rem;
+    }
+
+    figcaption {
+        font-size: 2rem;
     }
 }
