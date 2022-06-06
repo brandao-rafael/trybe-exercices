@@ -6,6 +6,72 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    margin: 25px 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(138, 135, 135);
+}
+
+header p {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.aside-container {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.aside-container ul li {
+    list-style: none;
+}
+
+.aside-one,
+.aside-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-one h2,
+.aside-two h2 {
+    margin: 15px auto;
+}
+
+.main-content h1 {
+    text-align: center;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 500px) {
@@ -21,7 +87,7 @@ html {
         background-color: white;
     }
 
-    header p{
+    header p {
         text-align: center;
         font-size: 1.5rem;
     }
@@ -32,6 +98,10 @@ html {
         margin-top: -15px;
         margin-left: -35px;
         list-style: none;
+    }
+
+    header nav ul li {
+        font-size: 0.8rem;
     }
 
     .aside-one {
@@ -49,5 +119,54 @@ html {
 
     p {
         font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    body {
+        background-color: aquamarine;
+        margin: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    header nav ul li {
+        margin-left: 15px;
+    }
+
+    .aside-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .aside-one,
+    .aside-two {
+        margin: 15px;
+        font-size: 0.9rem;
+        max-width: 40%;
+    }
+
+    .aside-one ul li,
+    .aside-two ul li {
+        list-style: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
     }
 }
