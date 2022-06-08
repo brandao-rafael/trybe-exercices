@@ -9,4 +9,4 @@ const logestWord = (string) => {
     string.split(' ').sort(function (a, b) {b.length > a.length ? logest = b : logest = a});
     return logest;
 }
-console.log(logestWord("A maior palavra"))
+console.log(logestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
