@@ -22,10 +22,13 @@ const addShift = (lesson, key, value) => lesson[key] = value;
 addShift(lesson2, Object.keys(lesson3)[3], lesson3['turno']);
 // Exercicio 2
 const showKeys = (lesson) => Object.keys(lesson);
-console.log(showKeys(lesson1));
+// console.log(showKeys(lesson1));
 // Exercicio 3
 const showLength = (lesson) => Object.keys(lesson).length;
-console.log(showLength(lesson3));
+// console.log(showLength(lesson3));
 // Exercicio 4
 const showValue = (lesson) => Object.values(lesson);
-console.log(showValue(lesson2));
+// console.log(showValue(lesson2));
+// Exercicio 5
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+//console.log(allLessons);
