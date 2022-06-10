@@ -47,3 +47,14 @@ const getValueByNumber = (lesson, n) => {
     return Object.values(lesson)[n];
 }
 // console.log(getValueByNumber(lesson1, 0));
+
+// Exercicio 8
+const verifyPair = (lesson, key, value) => {
+    const entries = Object.entries(lesson);
+    let result = false
+    for (const i in entries) {
+        entries[i][0] === key && entries[i][1] === value ?  result = true : null;
+    }
+    return result;
+}
+console.log(verifyPair(lesson3, 'materia', 'noite'));
