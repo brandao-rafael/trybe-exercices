@@ -53,8 +53,43 @@ const verifyPair = (lesson, key, value) => {
     const entries = Object.entries(lesson);
     let result = false
     for (const i in entries) {
-        entries[i][0] === key && entries[i][1] === value ?  result = true : null;
+        entries[i][0] === key && entries[i][1] === value ? result = true : null;
     }
     return result;
 }
-console.log(verifyPair(lesson3, 'materia', 'noite'));
+// console.log(verifyPair(lesson3, 'materia', 'noite'));
+
+// Exercicio BONUS 1
+const mathStudents = () => {
+    let studentsNumber = 0;
+    for (const key in allLessons) {
+        if (allLessons[key]['materia'] === 'Matemática') {
+            studentsNumber += allLessons[key]['numeroEstudantes'];
+        }
+    }
+    return studentsNumber;
+}
+mathStudents();
+
+// Exercicio BONUS 2
+const getValue = (lesson, teatcher) => {
+    const nlesson = [];
+    let students = 0;
+    const allLessonsValue = Object.values(lesson);
+    for (const key in allLessonsValue) {
+        if (allLessonsValue[key].professor === teatcher) {
+            nlesson.push(allLessonsValue[key].materia)
+            students += allLessonsValue[key].numeroEstudantes;
+        }
+    }
+    return { lesson: nlesson, estudantes: students };
+}
+
+const createReport = (allLessons, name) => {
+    const result = {};
+    result.professor = name;
+    Object.assign(result, getValue(allLessons, name));
+    return result;
+}
+
+console.log(createReport(allLessons, 'Maria Clara'));
