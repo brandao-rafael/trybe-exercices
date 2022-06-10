@@ -31,4 +31,7 @@ const showValue = (lesson) => Object.values(lesson);
 // console.log(showValue(lesson2));
 // Exercicio 5
 const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
-//console.log(allLessons);
+// console.log(allLessons);
+// Exercicio 6
+const studentNumbers = () => allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes;
+// console.log(studentNumbers());
