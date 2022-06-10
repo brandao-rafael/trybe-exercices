@@ -17,9 +17,15 @@ const lesson3 = {
     professor: 'Maria Clara',
     turno: 'noite',
 };
-
-const addShift = (lesson, key, value) => { lesson[key] = value; };
+// Exercicio 1
+const addShift = (lesson, key, value) => lesson[key] = value;
 addShift(lesson2, Object.keys(lesson3)[3], lesson3['turno']);
-
+// Exercicio 2
 const showKeys = (lesson) => Object.keys(lesson);
 console.log(showKeys(lesson1));
+// Exercicio 3
+const showLength = (lesson) => Object.keys(lesson).length;
+console.log(showLength(lesson3));
+// Exercicio 4
+const showValue = (lesson) => Object.values(lesson);
+console.log(showValue(lesson2));
