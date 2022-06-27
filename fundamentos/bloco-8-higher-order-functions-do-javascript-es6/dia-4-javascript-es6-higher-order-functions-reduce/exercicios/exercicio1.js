@@ -6,5 +6,4 @@ const arrays = [
 
 const flatten = (arr) => arr.reduce((acc, curVal) => acc.concat(curVal), [])
 
-
 console.log(flatten(arrays));
