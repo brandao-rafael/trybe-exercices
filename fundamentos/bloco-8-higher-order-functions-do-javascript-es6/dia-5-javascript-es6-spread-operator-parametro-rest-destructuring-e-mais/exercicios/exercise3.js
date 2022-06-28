@@ -12,9 +12,6 @@ const gunnar = {
   nationality: 'Icelandic',
 };
 
-// const persons = {...gunnar, ...alex};
-// const {name, age, likes} = persons
-
 // complete a assinatura da função abaixo
 const personLikes = ({name, age, likes}) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
 
