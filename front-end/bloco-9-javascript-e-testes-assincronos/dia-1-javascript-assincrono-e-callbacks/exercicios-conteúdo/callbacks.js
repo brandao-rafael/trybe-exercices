@@ -35,7 +35,7 @@
 // };
 // // despesaMensal(renda, despesas, somaDespesas);
 
-// Exercicio 1 -para fixar
+// Exercicio 1 - para fixar
 
 // const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
 // const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
@@ -51,3 +51,24 @@
 
 // console.log(getUser(userFullName)); // complete a chamada da função getUser de modo que o retorno seja: "Hello! My name is Ivan Ivanovich"
 // console.log(getUser(userNationality)); // complete a chamada da função getUser de modo que o retorno seja: "Ivan is Russian"
+
+// Exercicio 2 - para fixar
+const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
+const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
+
+const delay = (maxMilliseconds = 5000) => Math.floor(Math.random() * maxMilliseconds);
+
+const getUser = (callback) => {
+  setTimeout(() => {
+    const user = {
+      firstName: "Ivan",
+      lastName: "Ivanovich",
+      nationality: "Russian",
+    };
+    console.log(callback(user));
+    // Dica: você pode manter o `console.log()`
+  }, delay());
+};
+
+console.log(getUser(userFullName)) // deve imprimir "Hello! My name is Ivan Ivanovich" depois de um certo tempo
+console.log(getUser(userNationality)); // deve imprimir "Ivan is Russian" depois de um certo tempo
