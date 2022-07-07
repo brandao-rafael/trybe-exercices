@@ -31,13 +31,13 @@ function getPokemonDetails(filter, callback) {
     }, 2000);
 }
 
-getPokemonDetails((pokemon) => pokemon.name === 'Charmander', (error, msg) => {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log(msg);
-    }
-});
+// getPokemonDetails((pokemon) => pokemon.name === 'Charmander', (error, msg) => {
+//     if (error) {
+//         console.log(error);
+//     } else {
+//         console.log(msg);
+//     }
+// });
 
 module.exports = {
     getPokemonDetails,
