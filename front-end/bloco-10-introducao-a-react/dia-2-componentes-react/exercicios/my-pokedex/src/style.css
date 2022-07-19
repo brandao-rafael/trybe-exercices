@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(160, 160, 160);
+}
+
+.pokemon-item {
+    background-color: rgb(146, 228, 231);
+    color: rgb(44, 44, 44);
+    border: solid 1px black;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    width: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 450px) {
+    .pokemon-item {
+        flex-direction: column;
+    }
+}
