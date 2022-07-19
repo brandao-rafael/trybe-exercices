@@ -34,3 +34,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+// O que o componente App é em relação a Order? R: Pai
