@@ -32,7 +32,7 @@ export default class FieldsetPerson extends Component {
               })}
             </select>
           </label>
-          <div onChange={ handleChange }>
+          <div onChange={ handleChange } required>
             <label>
               <input type="radio" name="residence" id="casa" value="Casa" />Casa
             </label>

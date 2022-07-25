@@ -1,5 +1,9 @@
 import React, { Component } from "react";
+import FieldsetExperience from "./FieldsetExperience";
 import FieldsetPerson from "./FieldsetPerson";
+import SubmitButton from "./SubmitButton";
+import FormDataDisplay from "./FormDataDisplay";
+import Clear from "./Clear";
 
 export default class Form extends Component {
   constructor() {
@@ -13,8 +17,13 @@ export default class Form extends Component {
       cpf: '',
       adress: '',
       city: '',
-      state: '',
+      state: 'AC',
       residence:'',
+      resumeSumary: '',
+      office: '',
+      description: '',
+      firstExecution: true,
+      submit: false,
     }
   }
 
@@ -38,10 +47,41 @@ export default class Form extends Component {
     })
   }
 
+  onMouseHandler = () => {
+    if (this.state.firstExecution){
+      alert(`Preencha com cuidado essa informação!`);
+      this.setState({
+        firstExecution: false,
+      })
+    }  
+  }
+
+  submitHandler = (event) => {
+    event.preventDefault();
+    this.setState({
+      submit: true,
+    })
+  }
+
+  clearHandler = (event) => {
+    event.preventDefault();
+    this.setState({
+      submit: false,
+    })
+  }
+    
+
   render() {
+    const { submit } = this.state;
     return (
       <form>
         <FieldsetPerson handleChange={ this.handleChange } onBlurHandler={ this.onBlurHandler }/>
+        <FieldsetExperience onMouseHandler={ this.onMouseHandler } handleChange={ this.handleChange }/>
+        <div>
+          <SubmitButton submitHandler={ this.submitHandler }/>
+          <Clear clearHandler= { this.clearHandler } />
+        </div>
+        { submit && <FormDataDisplay currentState={ this.state } /> }
       </form>
     )
   }
