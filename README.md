@@ -98,19 +98,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 12: React
 
-- [ ] 12-1: _Ciclo de vida de componentes em React_
-- [ ] 12-2: _React Router_
-- [ ] 12-3: _[Projeto - TrybeTunes]()_
+- [X] 12-1: _Ciclo de vida de componentes em React_
+- [X] 12-2: _React Router_
+- [X] 12-3: _[Projeto - TrybeTunes]()_
 
 ##### Bloco 13: Metodologias Ágeis
 
-- [ ] 13-1: _Metodologias Ágeis_
-- [ ] 13-2: _[Projeto - Frontend Online Store]()_
+- [X] 13-1: _Metodologias Ágeis_
+- [X] 13-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 14: Testes automatizados com React Testing Library
 
-- [ ] 14-1: _RTL - Primeiros passos_
-- [ ] 14-2: _RTL - Mocks e Inputs_
+- [X] 14-1: _RTL - Primeiros passos_
+- [X] 14-2: _RTL - Mocks e Inputs_
 - [ ] 14-3: _RTL - Testando React Router_
 - [ ] 14-4: _[Projeto - Testes em React]()_
 
