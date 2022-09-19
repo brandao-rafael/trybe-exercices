@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.read {
+  background-color: gray;
+  list-style: none;
+}
+
+.unread {
+  background-color: aquamarine;
+  list-style: none;
+}
