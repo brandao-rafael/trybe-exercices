@@ -131,12 +131,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 17-1: _Context API do React_
 - [X] 17-2: _React Hooks - useState e useContext_
-- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [X] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [X] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Bloco 18: Projeto Final de Front-end
 
-- [ ] 18-1: _[Projeto - App de Receitas]()_
+- [X] 18-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
