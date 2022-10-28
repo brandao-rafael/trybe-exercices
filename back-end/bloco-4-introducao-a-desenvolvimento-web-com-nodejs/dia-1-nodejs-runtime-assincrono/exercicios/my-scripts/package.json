@@ -1,0 +1,16 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "Exercicios do dia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bmi": "node bmi.js",
+    "bmi-another-way": "node bmi-another-way.js"
+  },
+  "author": "Rafael Brandão",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
