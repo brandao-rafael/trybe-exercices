@@ -158,14 +158,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 21: Bancos de dados relacionais
 
 - [X] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs_
-- [ ] 21-3: _Transformando ideias em um modelos de banco de dados_
-- [ ] 21-4: _[Projeto - One For All]()_
+- [X] 21-2: _Descomplicando JOINs_
+- [X] 21-3: _Transformando ideias em um modelos de banco de dados_
+- [X] 21-4: _[Projeto - One For All]()_
 
 ##### Bloco 22: Introdução ao desenvolvimento Web com NOde.js
 
-- [ ] 22-1: _Node.js - Um motor JavaScript_
-- [ ] 22-2: _Node.js - Fluxo Assíncrono_
+- [X] 22-1: _Node.js - Um motor JavaScript_
+- [X] 22-2: _Node.js - Fluxo Assíncrono_
 - [ ] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
 - [ ] 22-4: _Express - Http com Node.js_
 - [ ] 22-5: _Express - Middlewares_
