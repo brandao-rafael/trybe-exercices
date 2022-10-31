@@ -115,7 +115,9 @@ describe('Usando o método GET em /chocolates', function () {
   });
 });
 
-describe("Teste de integração para o endpoint GET /chocolates/total", function () {
+// Exercicio -----------------
+
+describe("(Teste de integração para o endpoint GET /chocolates/total", function () {
   beforeEach(function () {
     sinon.stub(fs.promises, 'readFile').resolves(mockFile);
   });
