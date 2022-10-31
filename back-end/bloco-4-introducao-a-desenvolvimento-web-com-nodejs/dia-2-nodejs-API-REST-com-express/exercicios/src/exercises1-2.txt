@@ -1,0 +1,8 @@
+Qual é a função do código de status 400 e 422?
+
+400 Bad request
+422 Unprocessable entity
+
+Qual é a função do código de status 401?
+
+401 Unauthorized
