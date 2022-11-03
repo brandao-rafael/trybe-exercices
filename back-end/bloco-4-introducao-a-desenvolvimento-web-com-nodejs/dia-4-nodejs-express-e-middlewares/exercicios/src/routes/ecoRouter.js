@@ -1,7 +1,6 @@
 const express = require('express');
 const {
   verifyDescription,
-  verifyName,
   verifyPrice,
   verifyDate,
   verifyRating,
@@ -10,7 +9,6 @@ const {
 const router = express.Router();
 
 router.post('/activities',
-  verifyName,
   verifyDescription,
   verifyPrice,
   verifyDate,

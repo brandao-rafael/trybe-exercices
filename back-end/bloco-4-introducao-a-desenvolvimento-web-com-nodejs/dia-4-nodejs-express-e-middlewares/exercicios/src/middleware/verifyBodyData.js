@@ -1,6 +1,7 @@
 function verifyName(req, res, next) {
+  console.log(req.body);
   const { name } = req.boby;
-  if (name.length === 0) return res.status(400).json({ "message": "O campo name é obrigatório" });
+  if (!name) return res.status(400).json({ "message": "O campo name é obrigatório" });
   if (name.length < 4) return res.status(400).json({ "message": "O campo name deve ter pelo menos 4 caracteres" });
   next();
 };
