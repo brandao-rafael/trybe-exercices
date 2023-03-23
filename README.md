@@ -215,34 +215,29 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 29: Introdução ao MongoDB
 
-- [ ] 29-1: _Introdução - NoSQL e MongoDB_
-- [ ] 29-2: _Filter Operators_
-- [ ] 29-3: _Operadores de consulta_
-- [ ] 29-4: _Updates Simples_
-- [ ] 29-5: _Updates Complexos - Arrays_
-- [ ] 29-6: _[Projeto - Commerce]()_
+- [X] 29-1: _Introdução - NoSQL e MongoDB_
+- [X] 29-2: _Filter Operators_
+- [X] 29-3: _Operadores de consulta_
+- [X] 29-4: _Updates Simples_
+- [X] 29-5: _Updates Complexos - Arrays_
+- [X] 29-6: _[Projeto - Commerce]()_
 
 ##### Bloco 30: MongoDB com Node.js e POO
 
-- [ ] 30-1: _MonhoDB e arquitetura MSC_
-- [ ] 30-2: _MongoDB e POO_
-- [ ] 30-3: _[Projeto - Car Shop]()_
+- [X] 30-1: _MonhoDB e arquitetura MSC_
+- [X] 30-2: _MongoDB e POO_
+- [X] 30-3: _[Projeto - Car Shop]()_
 
 ##### Bloco 31: Projeto
 
-- [ ] 31-1: _[Projeto - App de Delivery]()_
-
-##### Bloco 32: MasterClass - VPS, CI/CD
-
-- [ ] 32-1: _Dia 1_
-- [ ] 32-2: _Dia 2_
+- [X] 31-1: _[Projeto - App de Delivery]()_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
 ##### Bloco 33: Introdução à Python
 
-- [ ] 33-1: _Aprendendo Python_
-- [ ] 33-2: _Entrada e Saída de Dados_
+- [X] 33-1: _Aprendendo Python_
+- [X] 33-2: _Entrada e Saída de Dados_
 - [ ] 33-3: _Testes_
 - [ ] 33-4: _[Projeto - Job Insights]()_
 
