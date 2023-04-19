@@ -4,9 +4,10 @@
 # abaixo e diga qual é a ordem de complexidade desse algoritmo para o melhor
 # caso, pior caso e caso médio.
 
+
 def contains_duplicate(numbers):
     numbers.sort()
-    previous_number = 'not a number'
+    previous_number = "not a number"
     for number in numbers:
         if previous_number == number:
             return True
@@ -14,4 +15,5 @@ def contains_duplicate(numbers):
 
     return False
 
-# responsta O(n log n) pois o sort é O(n log n)
+
+# responsta: O(n log n) pois o sort é O(n log n)
