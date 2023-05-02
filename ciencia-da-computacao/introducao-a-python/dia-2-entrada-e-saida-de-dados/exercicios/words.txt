@@ -1,0 +1,9 @@
+cat
+elephant
+dog
+monkey
+duck
+chameleon
+bear
+mouse
+rooster
