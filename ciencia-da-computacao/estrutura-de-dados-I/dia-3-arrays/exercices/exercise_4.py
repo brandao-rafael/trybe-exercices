@@ -7,7 +7,7 @@
 # Retorne quantas pessoas estudantes estão na biblioteca naquele instante.
 # Considere que todo estudante entrou e saiu da biblioteca.
 
-def students_library(entry, exit, s_hour):
+def students_library(entry: list[int], exit: list[int], s_hour: int):
     counter = 0
     for i, _ in enumerate(entry):
         if entry[i] <= s_hour <= exit[i]:
