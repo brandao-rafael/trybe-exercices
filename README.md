@@ -238,37 +238,37 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 33-1: _Aprendendo Python_
 - [X] 33-2: _Entrada e Saída de Dados_
-- [ ] 33-3: _Testes_
-- [ ] 33-4: _[Projeto - Job Insights]()_
+- [X] 33-3: _Testes_
+- [X] 33-4: _[Projeto - Job Insights]()_
 
 ##### Bloco 34: Padrões de Projeto
 
-- [ ] 34-1: _P.O.O em Python_
-- [ ] 34-2: _Padrões - Iterator, Adapter, Strategy_
-- [ ] 34-3: _Padrões - Decorator, Observer, Factory_
-- [ ] 34-5: _[Projeto - Relatórios de Estoque]()_
+- [X] 34-1: _P.O.O em Python_
+- [X] 34-2: _Padrões - Iterator, Adapter, Strategy_
+- [X] 34-3: _Padrões - Decorator, Observer, Factory_
+- [X] 34-5: _[Projeto - Relatórios de Estoque]()_
 
 ##### Bloco 35: Redes e Raspagem de Dados
 
-- [ ] 35-1: _Arquitetura de redes_
-- [ ] 35-2: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-3: _Raspagem de Dados_
-- [ ] 35-4: _[Projeto - Tech news]()_
+- [X] 35-1: _Arquitetura de redes_
+- [X] 35-2: _Redes de computadores, ferramentas e segurança_
+- [X] 35-3: _Raspagem de Dados_
+- [X] 35-4: _[Projeto - Tech news]()_
 
 ##### Bloco 36: Algoritmos
 
-- [ ] 36-1: _Complexidade de Algoritmos_
-- [ ] 36-2: _Recursividade e Estratégias para soluções de problemas_
-- [ ] 36-3: _Algoritmos de ordenação e busca_
-- [ ] 36-4: _[Projeto - Algoritmos]()_
+- [X] 36-1: _Complexidade de Algoritmos_
+- [X] 36-2: _Recursividade e Estratégias para soluções de problemas_
+- [X] 36-3: _Algoritmos de ordenação e busca_
+- [X] 36-4: _[Projeto - Algoritmos]()_
 
 ##### Bloco 37: Estruturas de Dados I - Arrays, Hashmaps e Sets
 
-- [ ] 37-1: _Arquitetura de computadores_
-- [ ] 37-2: _Arrays_
-- [ ] 37-3: _Hashmap e Dict_
-- [ ] 37-4: _Set_
-- [ ] 37-5: _[Projeto - Restaurant Orders]()_
+- [X] 37-1: _Arquitetura de computadores_
+- [X] 37-2: _Arrays_
+- [X] 37-3: _Hashmap e Dict_
+- [X] 37-4: _Set_
+- [X] 37-5: _[Projeto - Ting]()_
 
 ##### Bloco 38: Estrutura de Dados II - Listas, Filas e Pilhas
 
